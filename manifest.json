@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Turn Ugly into Beautiful",
+  "author": "fernanda-moreno",
+  "description": "Translate the phrase 'I'm stupid/ugly' into what it should be: I am the epitome of beauty and grace",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
